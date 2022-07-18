@@ -1,0 +1,120 @@
+/*Importing fonts properties from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Saira:wght@400;500;600;700&family=Stylish&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* Adding some styles to class max-width*/
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* Adding some styles to navbar*/
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 30px, 0;
+  font-family: "Reem Kufi", "sans-serif";
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-family: "Saira", "sans-serif";
+  font-size: 35px;
+  font-weight: 600;
+  align-items: center;
+}
+.navbar .logo a span {
+  color: crimson;
+}
+.navbar .links li {
+  display: inline-block;
+}
+
+.navbar .links li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.1s ease;
+}
+.navbar .links li a:hover {
+  color: crimson;
+}
+/*Adding styles to id project*/
+#projects .project-info {
+  padding: 30px;
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+}
+#projects .project-info h1 {
+  font-size: 30px;
+  font-weight: 500;
+  transform: translate(0px, 20px);
+}
+#projects .project-info h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+  color: cornflowerblue;
+  transform: translate(120px, 0px);
+}
+#projects .project-info p {
+  color: rgb(252, 186, 186);
+}
+#projects .project-info p span {
+  color: rgb(228, 245, 73);
+}
+
+#projects .project-img {
+  flex-basis: 50%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+#projects .project-img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  opacity: 0.2;
+}
+#projects .project-img img {
+  transition: 0.3s ease transform;
+}
+#projects .project-item:hover .project-img img {
+  transform: scale(1.1);
+}
+/*responsive media query start*/
+@media (max-width: 990px) {
+  .max-width {
+    padding: 0 50px;
+    margin: auto;
+  }
+}
+.footer {
+  background: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,163 @@
+/*Importing fonts properties from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Saira:wght@400;500;600;700&family=Stylish&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+/* Adding some styles to class max-width*/
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* Adding some styles to navbar*/
+.navbar {
+  position: fixed;
+  color: black;
+  width: 100%;
+  padding: 30px, 0;
+  font-family: "Reem Kufi", "sans-serif";
+}
+/* Adding some styles to class max-width in class navbar division */
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Adding some styles to class logo in class navbar division */
+.navbar .logo a {
+  font-family: "Saira", "sans-serif";
+  font-size: 35px;
+  font-weight: 600;
+  align-items: center;
+}
+/* Adding some styles to span from anchor a of class logo in class navbar division */
+.navbar .logo a span {
+  color: crimson;
+}
+.navbar .links li {
+  display: inline-block;
+}
+
+.navbar .links li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.1s ease;
+}
+.navbar .links li a:hover {
+  color: crimson;
+}
+/*Adding styles to cv section*/
+.cv {
+  display: flex;
+  color: rgba(254, 254, 254, 1);
+  height: ;
+  min-height: 50px;
+  font-family: "Stylish", "sans-serif";
+  font-weight: 600;
+}
+.cv .max-width {
+  margin: auto 0 auto 40px;
+}
+.cv .cv-content .name {
+  font-size: 24px;
+  color: black;
+  font-weight: 800;
+  margin: 100px 0 0 0;
+}
+.cv .cv-content .text-1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+  padding: 0 0 0 780px;
+}
+.cv .cv-content .text-2 {
+  font-size: 18px;
+  margin: 5px 0 0 0;
+  color: black;
+  padding: 0 0 0 780px;
+}
+
+.cv .cv-content .text-3 {
+  font-size: 18px;
+  padding: 0 0 0 780px;
+  margin: 5px 0 0 0;
+  color: black;
+}
+.cv .cv-content .text-4 {
+  font-size: 18px;
+  color: black;
+  padding: 0 0 0 780px;
+  margin: 5px 0 0 0;
+}
+.cv .cv-content .Studies h1 {
+  font-size: 36px;
+  color: black;
+  transform: translate(0px, -10px);
+}
+.cv .cv-content .Studies {
+  font-size: 18px;
+  color: black;
+  transform: translate(-100px, -350px);
+  margin: 5px 750px 0 0;
+}
+
+.cv .cv-content .skills h1 {
+  font-size: 36px;
+  color: black;
+  transform: translate(245px, -248px);
+}
+.cv .cv-content .skills {
+  font-size: 18px;
+  color: black;
+  transform: translate(100px, -250px);
+  margin: 5px 310px 0 60px;
+}
+.cv .cv-content .Hobbies h1 {
+  font-size: 36px;
+  color: black;
+  transform: translate(520px, -310px);
+}
+.cv .cv-content .Hobbies {
+  font-size: 18px;
+  color: black;
+  transform: translate(350px, -315px);
+  margin: 5px 310px 0 40px;
+}
+.cv .cv-content .Studies span {
+  text-align: ;
+}
+/*Adding styles to img */
+img {
+  width: 700px;
+  height: 500px;
+}
+/*Adding styles to text classes*/
+.text-1,
+.text-2,
+.text-3,
+.text-4 {
+  transform: translate(0px, -400px);
+}
+
+/*responsive media query start*/
+@media (max-width: 990px) {
+  .max-width {
+    padding: 0 50px;
+    margin: auto;
+  }
+}
+/*Adding styles to footer*/
+.footer {
+  background: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}

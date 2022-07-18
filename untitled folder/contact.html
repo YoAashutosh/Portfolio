@@ -1,0 +1,100 @@
+<!--Start of the html-->
+<!DOCTYPE html>
+<!--Setting language to English-->
+<html lang="en">
+  <!--Starting of the head-->
+  <head>
+    <!--Using charset so that characters could be easy to understand by computer-->
+    <meta charset="utf-8" />
+    <!--Using viewport to make our website effective in every device-->
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="index,follow" /><!--Makes easier to search page-->
+    <title>Contact</title><!--Naming title as Contact-->
+    <link rel="stylesheet" href="contact.css" /><!--External linking of the CSS-->
+  </head>
+  <!--End of the head-->
+  <!--Starting of the body-->
+  <body>
+    <!--Creating class navbar with the starting of nav-->
+    <nav class="navbar"><!--Creating class max-width with starting of div-->
+      <!--Creating class max-width with starting of div-->
+      <div class="max-width">
+        <!--Creating class logo with starting of div-->
+        <div class="logo">
+          <!--Using anchor tag and span for logo-->
+          <a href="#"><span>PORTFOLIO</span></a>
+        </div>
+        <!--End of the division-->
+        <!--Starting ul order list of class links-->
+        <ul class="links">
+          <!--Using li to give links for other contents-->
+          <li><a href="/index.html">HOME</a></li>
+          <li><a href="/cv.html">CV</a></li>
+          <li><a href="/blog.html">BLOG</a></li>
+          <li><a href="/research.html">RESEARCH</a></li>
+          <li><a href="/contact.html">CONTACT</a></li>
+          <!--Ending of the li and a-->
+        </ul><!--Ending of the ul ordered list-->
+      </div><!--Ending of the div-->
+    </nav><!--Ending of nav-->
+      <!--Starting of the section of class contact and id contact-->
+      <section class="contact" id="contact">
+        <!--Creating class max-width with starting of div-->
+        <div class="max-width">
+          <!--Creating class contact-content with starting of div-->
+          <div class="contact-content">
+          <!--Creating class text with starting of div and declaring h1 in div class text-1-->
+          <div class="text-1"><h1>Contact me</h1></div>
+          <div class="text-2">. Keep in touch .</div>
+          <div class="text-3">Mail me for further information</div>
+          <div class="text-4">My learning</div>
+          <!--Starting of the paragraph-->
+          <p class="text">I am currently studying at bachelors level. I’ve been learning HTML since my 10th grade.
+                          I learn from youtube mostly and apparently from sites some days. If you wanna learn more youtube is the best platform. 
+                          So everyone get started if you’ve an interest in such fields.   
+          </p><!--End of the paragraph-->
+          <div class="text-5">Name</div>
+          <div class="text-6">Aashutosh Sharma</div>
+          <div class="text-7">Permanent Address</div>
+          <div class="text-8">Nawalparasi,Nepal</div>
+          <div class="text-9">Current Address</div>
+          <div class="text-10">Kathmandu,Nepal</div>
+          <div class="text-11">Email</div>
+          <div class="text-12">xyz@gmail.com</div>
+          <div class="footer"><!--Starting of the division footer-->
+            <!--Starting of the paragraph-->
+            <p>Created by Aashutosh Sharma.All rights reserved &copy; 2021</p><!--End of the paragraph-->
+          </div><!--End of divisions having class text-->
+          <!--Starting div class form-->
+          <div class="form">
+              <!--Creating a form -->
+              <form name="messageform" onsubmit="validateform()">
+              <!--Start of the p tags with class starting from text-->
+              <p class="form-text-1"><input type="text" name="firstname" placeholder="First Name.." style="width:185px"></p>
+              <p class="form-text-2"><input type="text" name="lastname" placeholder="Last Name.." style="width:198px"></p>
+              <p class="form-text-3"><input type="text" name="email" placeholder="xyz@gmail.com.."style="width:400px"></p>
+              <p class="form-text-4"><input type="text" name="subject" placeholder="subject.."style="width:400px"></p>
+              <p class="form-text-5"><textarea name="message" rows="8" cols="25" placeholder="Message" style="width:400px"></textarea></p>
+              <!--Creation of button-->
+              <button class="button">Send Message</button><!--End of the button-->
+              </form><!--End of the form-->
+          </div><!--End of the div-->
+          <!--Starting of the script-->
+          <script> 
+             function validateform() {
+               var fname = document.forms["messageform"]["firstname"].value;
+               var lname = document.forms["messageform"]["lastname"].value;
+               var email = document.forms["messageform"]["email"].value;
+               var subject = document.forms["messageform"]["subject"].value; 
+               var message = document.forms["messageform"]["message"].value;
+               
+               if (fname == "" || lname == "" || message == ""){
+                  alert("No entries found.Please fill the form.");
+               }
+               else{
+                 alert("Thank you for the feedback.")
+               }
+             }
+          </script><!--End of the script-->
+        </body><!--End of the body-->
+</html><!--End of the html-->

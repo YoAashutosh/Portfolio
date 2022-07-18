@@ -1,0 +1,204 @@
+/*Importing fonts properties from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Saira:wght@400;500;600;700&family=Stylish&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/* Adding some styles to navbar*/
+.navbar {
+  position: fixed;
+  background: black;
+  width: 100%;
+  padding: 30px, 0;
+  font-family: "Reem Kufi", "sans-serif";
+}
+
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a {
+  font-family: "Saira", "sans-serif";
+  font-size: 35px;
+  font-weight: 600;
+  align-items: center;
+}
+.navbar .logo a span {
+  color: crimson;
+}
+.navbar .links li {
+  display: inline-block;
+}
+
+.navbar .links li a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition: color 0.1s ease;
+}
+.navbar .links li a:hover {
+  color: crimson;
+}
+
+/*Adding styles to contact section*/
+.contact {
+  display: flex;
+  font-family: "Saira", "sans-serif";
+  font-weight: 400;
+}
+.contact.max-width {
+  margin: auto 0 auto 40px;
+}
+.contact .contact-content .text-1 {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 150px 0 0 500px;
+}
+
+.contact .contact-content .text-2 {
+  font-size: 16.5px;
+  font-weight: 500;
+  margin: 0 0 0 0;
+  color: rgba(95, 0, 0, 1);
+  padding: 0 0 0 550px;
+}
+
+.contact .contact-content .text-3 {
+  font-size: 18px;
+  padding: 0;
+  font-weight: 600;
+  transform: translate(0px, 10px);
+}
+
+.contact .contact-content .text-4 {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 600;
+  padding: 0 0 0 760px;
+  transform: translate(0px, -30px);
+}
+.contact .contact-content .text {
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: 300;
+  padding: 0 0 0 765px;
+}
+.contact .contact-content .text-5 {
+  font-size: 18px;
+  padding: 0 0 0 790px;
+}
+.contact .contact-content .text-6 {
+  font-size: 16.5px;
+  padding: 0 0 0 800px;
+}
+.contact .contact-content .text-7 {
+  font-size: 18px;
+  padding: 0 0 0 970px;
+  transform: translate(0px, -57px);
+}
+.contact .contact-content .text-8 {
+  font-size: 16.5px;
+  padding: 0 0 0 980px;
+  transform: translate(0px, -57px);
+}
+.contact .contact-content .text-9 {
+  font-size: 18px;
+  padding: 0 0 0 790px;
+  transform: translate(0px, -37px);
+}
+.contact .contact-content .text-10 {
+  font-size: 16.5px;
+  padding: 0 0 0 800px;
+  transform: translate(0px, -37px);
+}
+.contact .contact-content .text-11 {
+  font-size: 18px;
+  padding: 0 0 0 970px;
+  transform: translate(0px, -94px);
+}
+.contact .contact-content .text-12 {
+  font-size: 16.5px;
+  padding: 0 0 0 980px;
+  transform: translate(0px, -94px);
+}
+
+/*responsive media query start*/
+@media (max-width: 990px) {
+  .max-width {
+    padding: 0 50px;
+    margin: auto;
+  }
+}
+/*Adding styles to footer*/
+.footer {
+  background: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+/*Adding styles to button section*/
+.button {
+  border: none;
+  color: white;
+  padding: 12px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button {
+  background-color: rgba(205, 1, 1, 1);
+  border: 2px solid;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: rgb(19, 3, 3);
+  color: white;
+  border-color: crimson;
+  border-width: 5px;
+}
+/*Adding styles to form section*/
+.form {
+  transform: translate(0px, -400px);
+}
+
+input[type="text"] {
+  border: 1px solid rgb(27, 2, 2);
+  border-radius: 5px;
+  background: rgb(197, 197, 197);
+  margin-left: 20px;
+  width: 150px;
+  height: 32px;
+}
+textarea {
+  border: 1px solid rgb(27, 2, 2);
+  border-radius: 5px;
+  background: rgba(196, 196, 196, 1);
+}
+.form .form-text-2 {
+  transform: translate(200px, -32px);
+}
+.form .form-text-3 {
+  transform: translate(0px, -20px);
+}
+.form .form-text-5 {
+  transform: translate(17px, 20px);
+}
+.button {
+  transform: translate(130px, 20px);
+}
